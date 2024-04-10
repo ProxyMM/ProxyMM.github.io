@@ -96,3 +96,12 @@
   text-transform: none;
   text-decoration: none;
 }
+.landing-page-navbar {
+  text-align: center !important;
+}
+
+.title {
+  display: inline-block;
+}
+
+
