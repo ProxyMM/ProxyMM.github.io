@@ -406,6 +406,7 @@
     margin-left: 0px;
   }
   
+  
 }
 
 .landing-page-navbar {
@@ -414,5 +415,12 @@
 
 .title {
   display: inline-block;
-  padding-left: 23vw;
+  padding-left: 4vw;
+}
+
+@media screen and (min-width: 1200px) and (min-height: 600px) {
+  .title {
+    display: inline-block;
+    padding-left: 23vw;
+  }
 }
