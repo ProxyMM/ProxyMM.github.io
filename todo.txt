@@ -1,3 +1,0 @@
-center text in title
-change albaz 2 pfp
-fix file structure
