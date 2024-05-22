@@ -3,66 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Gallery</title>
+    <title>Sky Striker Manga</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        img {
-            margin: 0 auto;
-            display: block;
-            width: 90%;
-        }
+        body {
+    font-family: Arial, sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 0 21%; /* Adjusts to make 4 cards per row */
+    margin: 10px;
+    height: 150px; /* Ensures square cards */
+    text-align: center;
+}
+
+.card a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
     </style>
 </head>
 <body>
-    <div id="gallery"></div>
-
-    <script>
-        const galleryDiv = document.getElementById('gallery');
-
-        for (let i = 1; i < 37; i++) {
-            const imagePath = `../Images/SkyStriker/ch_1/${i}.png`;
-            const imgElement = document.createElement('img');
-            imgElement.src = imagePath;
-            imgElement.style = 'margin: 0 auto; display: block; width: 90%;';
-            const pElement = document.createElement('p');
-            pElement.appendChild(imgElement);
-            galleryDiv.appendChild(pElement);
-        }
-		for (let i = 0; i < 29; i++) {
-            const imagePath = `../Images/SkyStriker/ch_2/${i}.png`;
-            const imgElement = document.createElement('img');
-            imgElement.src = imagePath;
-            imgElement.style = 'margin: 0 auto; display: block; width: 90%;';
-            const pElement = document.createElement('p');
-            pElement.appendChild(imgElement);
-            galleryDiv.appendChild(pElement);
-        }
-		for (let i = 0; i < 31; i++) {
-            const imagePath = `../Images/SkyStriker/ch_3/${i}.png`;
-            const imgElement = document.createElement('img');
-            imgElement.src = imagePath;
-            imgElement.style = 'margin: 0 auto; display: block; width: 90%;';
-            const pElement = document.createElement('p');
-            pElement.appendChild(imgElement);
-            galleryDiv.appendChild(pElement);
-        }
-		for (let i = 0; i < 31; i++) {
-            const imagePath = `../Images/SkyStriker/ch_4/${i}.png`;
-            const imgElement = document.createElement('img');
-            imgElement.src = imagePath;
-            imgElement.style = 'margin: 0 auto; display: block; width: 90%;';
-            const pElement = document.createElement('p');
-            pElement.appendChild(imgElement);
-            galleryDiv.appendChild(pElement);
-        }
-		for (let i = 0; i < 31; i++) {
-            const imagePath = `../Images/SkyStriker/ch_5/${i}.png`;
-            const imgElement = document.createElement('img');
-            imgElement.src = imagePath;
-            imgElement.style = 'margin: 0 auto; display: block; width: 90%;';
-            const pElement = document.createElement('p');
-            pElement.appendChild(imgElement);
-            galleryDiv.appendChild(pElement);
-        }
-    </script>
+    <div class="flex-container">
+        <div class="card"><a href="./SkyStrikerManga/ch_1.html">Chapter 1</a></div>
+        <div class="card"><a href="./SkyStrikerManga/ch_2.html">Chapter 2</a></div>
+        <div class="card"><a href="./SkyStrikerManga/ch_3.html">Chapter 3</a></div>
+        <div class="card"><a href="./SkyStrikerManga/ch_4.html">Chapter 4</a></div>
+        <div class="card"><a href="./SkyStrikerManga/ch_5.html">Chapter 5</a></div>
+        <div class="card"><a href="./SkyStrikerManga/ch_6.html">Chapter 6</a></div>
+        <div class="card"><a href="./SkyStrikerManga/ch_7.html">Chapter 7</a></div>
+        <div class="card"><a href="./SkyStrikerManga/ch_8.html">Chapter 8</a></div>
+        <div class="card"><a href="./SkyStrikerManga/ch_9.html">Chapter 9</a></div>
+        <div class="card"><a href="./SkyStrikerManga/ch_10.html">Chapter 10</a></div>
+        <div class="card"><a href="./SkyStrikerManga/ch_11.html">Chapter 11</a></div>
+        <div class="card"><a href="./SkyStrikerManga/ch_12.html">Chapter 12</a></div>
+        <div class="card"><a href="./SkyStrikerManga/ch_13.html">Chapter 13</a></div>
+        <div class="card"><a href="./SkyStrikerManga/ch_14.html">Chapter 14</a></div>
+        <div class="card"><a href="./SkyStrikerManga/ch_15.html">Chapter 15</a></div>
+        <div class="card"><a href="./SkyStrikerManga/ch_16.html">Chapter 16</a></div>
+        <div class="card"><a href="./SkyStrikerManga/ch_17.html">Chapter 17</a></div>
+        <div class="card"><a href="./SkyStrikerManga/ch_18.html">Chapter 18</a></div>
+        <div class="card"><a href="./SkyStrikerManga/ch_19.html">Chapter 19</a></div>
+    </div>
 </body>
 </html>
